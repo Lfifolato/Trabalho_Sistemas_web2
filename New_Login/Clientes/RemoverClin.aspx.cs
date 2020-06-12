@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 
 namespace New_Login.Clientes
 {
-    public partial class DetalhesClin : System.Web.UI.Page
+    public partial class RemoverClin : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -71,6 +71,8 @@ namespace New_Login.Clientes
 
         }
 
+
+
         private int ObterIdUser()
         {
             var id = 0;
@@ -86,6 +88,31 @@ namespace New_Login.Clientes
 
             }
             return id;
+        }
+
+        protected void btnEditar_Click(object sender, EventArgs e)
+        {
+            var idCliente = ObterIdUser();
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = Conexao.Connection;
+                cmd.CommandText = @"delete from clientes
+                                    where id = @id";
+                cmd.Parameters.AddWithValue("@id", idCliente);
+                Conexao.Conectar();
+                cmd.ExecuteNonQuery();
+
+                Response.Redirect("listaclin.aspx");
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                Conexao.Desconectar();
+            }
         }
     }
 }

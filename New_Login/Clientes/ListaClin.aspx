@@ -68,7 +68,7 @@
                             </a>
                             </asp:LinkButton>
                             <asp:LinkButton ID="lnkRemover" runat="server">
-                            <a href='<%# Eval("id", "removerUser.aspx?id={0}") %>'>
+                            <a href='<%# Eval("id", "RemoverClin.aspx?id={0}") %>'>
                                 <span class="fas fa-trash-alt"></span>
                             </a>
                             </asp:LinkButton>

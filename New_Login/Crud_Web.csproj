@@ -95,12 +95,17 @@
     <Content Include="Clientes\AdicionarClin.aspx" />
     <Content Include="Clientes\DetalhesClin.aspx" />
     <Content Include="Clientes\ListaClin.aspx" />
+    <Content Include="Clientes\RemoverClin.aspx" />
+    <Content Include="Css\Login.css" />
+    <Content Include="Default.aspx" />
     <Content Include="Fornecedor\AdicionarForn.aspx" />
     <Content Include="Fornecedor\DetalhesForn.aspx" />
     <Content Include="Fornecedor\EditarForn.aspx" />
     <Content Include="Fornecedor\ListaForn.aspx" />
     <Content Include="Fornecedor\RemoverForn.aspx" />
+    <Content Include="Home.aspx" />
     <Content Include="img\adssoftware.png" />
+    <Content Include="img\Login.png" />
     <Content Include="img\logo02.png" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.min.js" />
@@ -238,6 +243,20 @@
     <Compile Include="Clientes\ListaClin.aspx.designer.cs">
       <DependentUpon>ListaClin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Clientes\RemoverClin.aspx.cs">
+      <DependentUpon>RemoverClin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clientes\RemoverClin.aspx.designer.cs">
+      <DependentUpon>RemoverClin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Fornecedor\AdicionarForn.aspx.cs">
       <DependentUpon>AdicionarForn.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -272,6 +291,13 @@
     </Compile>
     <Compile Include="Fornecedor\RemoverForn.aspx.designer.cs">
       <DependentUpon>RemoverForn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\AdicionarUser.aspx.cs">
       <DependentUpon>AdicionarUser.aspx</DependentUpon>
