@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Data;
+using System.Web.UI.WebControls;
 
 namespace New_Login
 {
@@ -16,7 +17,7 @@ namespace New_Login
         #region CarregarUsuarios
         private void CarregarUsuarios()
         {
-            string query = @"select id, nome, nivel from usuario";
+            string query = @"select id, nome, nivel  from usuario";
             DataTable dt = new DataTable();
             try
             {
@@ -41,5 +42,19 @@ namespace New_Login
             Response.Redirect("AdicionarUser.aspx");
         }
         #endregion
+
+        protected void rptUsuarios_ItemDataBound(object sender, System.Web.UI.WebControls.RepeaterItemEventArgs e)
+        {
+            
+            string nivel = Session["Perfil"].ToString();
+            var lnkEditar = (LinkButton)e.Item.FindControl("lnkEditar");
+            var lnkRemover = (LinkButton)e.Item.FindControl("lnkRemover");
+
+            if (lnkEditar != null && lnkRemover != null && nivel == "O")
+            {
+                lnkEditar.Visible = false;
+                lnkRemover.Visible = false;
+            }
+        }
     }
 }

@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-
+    
     <link rel="stylesheet" type="text/css"
         href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" />
 
@@ -27,7 +27,7 @@
             </div>
         </div>
         <p>
-            <asp:Repeater ID="rptUsuarios" runat="server">
+            <asp:Repeater ID="rptUsuarios" runat="server" OnItemDataBound="rptUsuarios_ItemDataBound">
                 <HeaderTemplate>
                     <table class="table table-hover" id="sisDataTable">
                         <thead>

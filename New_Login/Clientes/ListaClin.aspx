@@ -29,7 +29,7 @@
             </div>
         </div>
         <p>
-            <asp:Repeater ID="rptUsuarios" runat="server">
+            <asp:Repeater ID="rptUsuarios" runat="server" OnItemCommand="rptUsuarios_ItemCommand">
                 <HeaderTemplate>
                     <table class="table table-hover" id="sisDataTable">
                         <thead>

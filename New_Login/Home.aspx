@@ -12,7 +12,7 @@
 
             
             <h1 class="display-4"> ADL Software</h1>
-            <p class="lead"> ADL Software iniciou suas atividade em 1990 e foi fundada por Luiz Henrique Dalri Fifolato, Andre, Danilo .</p>
+            <p class="lead"> ADL Software iniciou suas atividade em 1990 e foi fundada por Luiz Henrique Dalri Fifolato, Andre, Danilo Repas Pinha .</p>
             <hr class="my-4">
             <p>
                 Então, dentro do que eu me motivo, ou dentro dos motivos que crio para 

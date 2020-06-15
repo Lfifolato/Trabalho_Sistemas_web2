@@ -44,5 +44,19 @@ namespace New_Login.Fornecedor
         {
             Response.Redirect("AdicionarForn.aspx");
         }
+
+        protected void rptUsuarios_ItemDataBound(object sender, RepeaterItemEventArgs e)
+        {
+
+            string nivel = Session["Perfil"].ToString();
+            var lnkEditar = (LinkButton)e.Item.FindControl("lnkEditar");
+            var lnkRemover = (LinkButton)e.Item.FindControl("lnkRemover");
+
+            if (lnkEditar != null && lnkRemover != null && nivel == "O")
+            {
+                lnkEditar.Visible = false;
+                lnkRemover.Visible = false;
+            }
+        }
     }
 }

@@ -12,6 +12,15 @@ namespace New_Login
         protected void Page_Load(object sender, EventArgs e)
         {
 
+
+            string nivel = Session["Perfil"].ToString();
+            if (nivel == "O")
+            {
+                btnAdm.Visible = false;
+            }
+
+
+
         }
 
         

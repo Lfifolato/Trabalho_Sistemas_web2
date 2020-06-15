@@ -35,13 +35,13 @@
             </ul>
 
             <div class="form-inline my-2 my-lg-0" style="padding-right: 15px">
-                <asp:HyperLink type="button" runat="server" class="btn btn-outline-primary" NavigateUrl="/User/ListaUser.aspx">Administrador</asp:HyperLink>
+                <asp:HyperLink type="button" runat="server" class="btn btn-outline-primary" ID="btnAdm" NavigateUrl="/User/ListaUser.aspx">Administrador</asp:HyperLink>
             </div>
 
             
 
            <div class="form-inline my-2 my-lg-0">
-                <asp:HyperLink type="button" runat="server" class="btn btn-outline-danger" NavigateUrl="/User/AdicionarUser.aspx">Sair</asp:HyperLink>
+                <asp:HyperLink type="button" runat="server" class="btn btn-outline-danger" NavigateUrl="Default.aspx">Sair</asp:HyperLink>
             </div>
 
         </div>

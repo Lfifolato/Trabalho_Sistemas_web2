@@ -44,5 +44,19 @@ namespace New_Login.Clientes
         {
             Response.Redirect("AdicionarClin.aspx");
         }
+
+        protected void rptUsuarios_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+
+            string nivel = Session["Perfil"].ToString();
+            var lnkEditar = (LinkButton)e.Item.FindControl("lnkEditar");
+            var lnkRemover = (LinkButton)e.Item.FindControl("lnkRemover");
+
+            if (lnkEditar != null && lnkRemover != null && nivel == "O")
+            {
+                lnkEditar.Visible = false;
+                lnkRemover.Visible = false;
+            }
+        }
     }
 }
