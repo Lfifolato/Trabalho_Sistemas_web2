@@ -46,7 +46,7 @@
         </div>
 
         <div class="form-inline my-2 my-lg-0" style="padding-top: 20px;">
-            <asp:HyperLink type="button" runat="server" class="btn btn-outline-primary" NavigateUrl="~/User/ListaUser.aspx">Volar</asp:HyperLink>
+            <asp:HyperLink type="button" runat="server" class="btn btn-outline-primary" NavigateUrl="~/User/ListaUser.aspx">Voltar</asp:HyperLink>
         </div>
 
 
